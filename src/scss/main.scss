@@ -3,11 +3,140 @@
 @import "_variables";
 @import "modules/hello.scss";
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;700&family=Roboto+Mono:wght@400;700&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
-  background: $wtf;
-  color: #fff;
+  background: $white;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  font-family: 'Nunito', sans-serif;
+
+}
+
+.main {
+  background: $white;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero {
+  display: flex;
+  flex-flow: column;
+  align-items: center;  
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  max-width: 1440px;
+  min-height: 856px;
+  &__container {
+    width: auto;
+    max-width: 982px;
+    min-height: 600px;
+    margin: 80px auto 176px; 
+    padding: 0 15px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+  }
+  &__image-box {
+    position: relative;
+    margin: 50px auto 72px;
+    width: 178px;
+    height: 178px;
+  }
+  &__image {
+    flex-shrink: 0;
+    border-radius: 50%;      
+  }
+  &__hello {
+    width: 230px;
+    height: 72px;
+    margin: 0;
+    border-radius: 16px;
+    position: absolute;
+    top: -50px;
+    left: 178px;
+    background-color: $blue;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    padding: 16px 0px 0px 19px;
+    text-align: left;
+    color: $white;
+    @media screen and (max-width: 670px) {
+      display: none;
+    }
+    &--speech {
+      position: absolute;
+      top: 72px;
+      left: 32px;
+      @media screen and (max-width: 670px) {
+        display: none;
+      }
+    }
+  }
+  &__header {
+    margin: 0;
+    max-width: 830px;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px; 
+    color: $header-dark;   
+  }
+  &__highlight{
+    color: $blue;
+  }
+  &__description {
+    max-width: 830px;
+    margin: 24px 0 0;
+    padding: 0;
+    color: $text-dark;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 40px;
+  }
+  &__email {
+    margin: 68px 0 0;
+  }
+}
+
+.email {
+  width: auto;
+  height: 48px;
+  background: $link-blue;
+  border-radius: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 40px;
+  color: $white;
+  padding: 0 24px;
+  text-decoration: none;
+}
+
+.card__container {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.internal-link {
+
+}
+
+.external-link {
+
 }

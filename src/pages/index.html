@@ -20,16 +20,21 @@
   <body>
     <main class="main">
       <section class="hero">
-        <div class="hero__image-container">
-          <img class="hero__image" src="../assets/img/logo.svg" alt="photo of Dorota Pindur">
-        </div>
-        <span class="hero__hello">Hey there! 👋</span>
+        <div class="hero__container">
+          <div class="hero__image-box">
+            <img class="hero__image" src="../assets/img/DoraPindur.jpg" alt="photo of Dorota Pindur">
+            <span class="hero__hello">Hey there! 👋 <svg class="hero__hello--speech" width="18" height="23" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M1.35075 22.6576C3.87945 19.8279 5.4167 16.0935 5.4167 12C5.4167 7.22123 3.32168 2.93178 0 0H17.4167C17.4167 10.4744 10.7067 19.3816 1.35075 22.6576Z" fill="#1070CA"/>
+              </svg>
+              </span>
+            
+          </div>
+          <h1 class="hero__header">My name is Dorota and I'm an aspiring <span class="hero__highlight">Frontend developer</span>, violinist and sketcher.</h1>
 
-        <h1 class="hero__header">My name is Dorota and I'm an aspiring <span class="hero__highlight">Frontend developer</span>, violinist and sketcher.</h1>
+          <p class="hero__description">You might be interested in checking the list of <a class="internal-link">my skills</a>. Don't forget to have a glimpse at <a class="internal-link">my projects</a>. Currently I'm looking for new challenges so if you have one - <a class="internal-link">contact me</a> 🙂</p>
 
-        <p class="hero__description">You might be interested in checking the list of <a class="link--internal">my skills</a>. Don't forget to have a glimpse at <a class="link--internal">my projects</a>. Currently I'm looking for new challenges so if you have one - <a class="link--internal">contact me</a> 😊</p>
-
-        <a href="mailto:dpindur@wp.pl">dpindur@wp.pl</a>
+          <a class="email hero__email" href="mailto:dpindur@wp.pl">dpindur@wp.pl</a>
+        </div>  
       </section>
 
       <section class="skills">
@@ -73,32 +78,28 @@
             <li class="want-list__item">WebSocket</li>
             <li class="want-list__item">Gatsby JS</li>
             <li class="want-list__item">Graph QL</li>
-            <li class="want-list__item">Electron</li>
-            <li class="want-list__item">Server side rendering</li>
           </ul>
         </article>
       </section>
+
       <setion class="projects">
         <h2 class="projects__header">Recent projects</h2>
         <p class="projects__intro">I started my frontend developer path in 2020. Since then, I've built some projects. Here's the list of the things I've done so far.</p>
         <div class="card__container">
-          <div class="card__strap">
-            <svg class="card__dots" width="40" height="8" viewBox="0 0 40 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="4" cy="4" r="4" fill="#464A4D"/>
-              <circle cx="20" cy="4" r="4" fill="#464A4D"/>
-              <circle cx="36" cy="4" r="4" fill="#464A4D"/>
-              </svg>              
-          </div>
-          <svg class="card__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M11.9906 1.7876C6.19453 1.78525 1.5 6.47744 1.5 12.2688C1.5 16.8485 4.43672 20.7415 8.52656 22.1712C9.07734 22.3095 8.99297 21.9181 8.99297 21.6509V19.8345C5.8125 20.2071 5.68359 18.1024 5.47031 17.7509C5.03906 17.0149 4.01953 16.8274 4.32422 16.4759C5.04844 16.1032 5.78672 16.5696 6.64219 17.8329C7.26094 18.7493 8.46797 18.5946 9.07969 18.4423C9.21328 17.8915 9.49922 17.3993 9.89297 17.0173C6.59766 16.4267 5.22422 14.4157 5.22422 12.0251C5.22422 10.8649 5.60625 9.79854 6.35625 8.93838C5.87812 7.52041 6.40078 6.30635 6.47109 6.12588C7.83281 6.004 9.24844 7.10088 9.35859 7.1876C10.132 6.97901 11.0156 6.86885 12.0047 6.86885C12.9984 6.86885 13.8844 6.98369 14.6648 7.19463C14.9297 6.99307 16.2422 6.05088 17.5078 6.16572C17.5758 6.34619 18.0867 7.53213 17.6367 8.93135C18.3961 9.79385 18.7828 10.8696 18.7828 12.0321C18.7828 14.4274 17.4 16.4407 14.0953 17.022C14.3784 17.3003 14.6031 17.6323 14.7564 17.9985C14.9098 18.3647 14.9886 18.7578 14.9883 19.1548V21.7915C15.007 22.0024 14.9883 22.211 15.3398 22.211C19.4906 20.8118 22.4789 16.8907 22.4789 12.2712C22.4789 6.47744 17.782 1.7876 11.9906 1.7876Z" fill="white"/>
-          </svg>
-          <ul class="card__labels">
+          <svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="128" height="128" rx="16" fill="#212528"/>
+            <path d="M0 16C0 7.16344 7.16344 0 16 0H112C120.837 0 128 7.16344 128 16V40H0V16Z" fill="#1E1E1E"/>
+            <circle cx="20" cy="20" r="4" fill="#464A4D"/>
+            <circle cx="36" cy="20" r="4" fill="#464A4D"/>
+            <circle cx="52" cy="20" r="4" fill="#464A4D"/>
+          </svg>                       
+          <ul class="card__labels labels--js">
             <li class="label label--project">project:</li>
             <li class="label label--description">description:</li>
             <li class="label label--demo">demo:</li>
             <li class="label label--github">github:</li>
           </ul>
-          <ul class="card__content">
+          <ul class="card__content content--js">
             <li class="content content--one"></li>
             <li class="content content--two"></li>
             <li class="content content--three"></li>
@@ -106,12 +107,13 @@
           </ul>        
         </div>
       </setion>
+
       <section class="contact">
         <h2 class="contact__header">Contact me</h2>
         <p class="contact__text">I'm open for new opportunities. If you have one for me we should talk!</p>
         <div class="contact__low-bar">
           <div class="contact__icon-container">
-            <svg class="githun-icon" width="64" height="52" viewBox="0 0 64 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="github-icon" width="64" height="52" viewBox="0 0 64 52" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_d)">
               <circle cx="32" cy="28" r="24" fill="white"/>
               </g>
@@ -132,38 +134,38 @@
               <g filter="url(#filter0_d)">
               <circle cx="32" cy="28" r="24" fill="white"/>
               </g>
-              <path d="M31.997 23.9983C29.7935 23.9983 27.9953 257965 27.9953 28C27.9953 30.2035 29.7935 32.0017 31997 32.0017C34.2005 32.0017 35.9987 30.2035 35.998728C35.9987 25.7965 34.2005 23.9983 31.997 239983ZM43.9991 28C43.9991 26.3429 44.0141 24.7008 439211 23.0467C43.828 21.1254 43.3897 19.4202 41.984718.0153C40.5768 16.6073 38.8746 16.172 36.9533 160789C35.2962 15.9859 33.6541 16.0009 32 16.0009C303429 16.0009 28.7008 15.9859 27.0467 16.0789C251254 16.172 23.4202 16.6103 22.0153 18.0153C20.607319.4232 20.172 21.1254 20.0789 23.0467C19.9859 247038 20.0009 26.3459 20.0009 28C20.0009 29.6541 199859 31.2992 20.0789 32.9533C20.172 34.8746 20.610336.5798 22.0153 37.9847C23.4232 39.3927 25.1254 39828 27.0467 39.9211C28.7038 40.0141 30.3459 39.999132 39.9991C33.6571 39.9991 35.2992 40.0141 36.953339.9211C38.8746 39.828 40.5798 39.3897 41.9847 379847C43.3927 36.5768 43.828 34.8746 43.9211 329533C44.0171 31.2992 43.9991 29.6571 43.9991 28ZM31997 34.1572C28.5897 34.1572 25.8398 31.4073 25.839828C25.8398 24.5927 28.5897 21.8428 31.997 218428C35.4043 21.8428 38.1542 24.5927 38.1542 28C381542 31.4073 35.4043 34.1572 31.997 34.1572ZM384063 23.0286C37.6108 23.0286 36.9684 22.3862 369684 21.5907C36.9684 20.7951 37.6108 20.1527 384063 20.1527C39.2019 20.1527 39.8443 20.7951 398443 21.5907C39.8445 21.7796 39.8075 21.9667 397353 22.1412C39.6631 22.3158 39.5572 22.4744 394237 22.608C39.2901 22.7416 39.1315 22.8475 38.956922.9197C38.7823 22.9918 38.5952 23.0289 38.4063 230286Z" fill="#4DA8FF"/>
+              <path d="M31.997 23.9983C29.7935 23.9983 27.9953 25.7965 27.9953 28C27.9953 30.2035 29.7935 32.0017 31.997 32.0017C34.2005 32.0017 35.9987 30.2035 35.9987 28C35.9987 25.7965 34.2005 23.9983 31.997 23.9983ZM43.9991 28C43.9991 26.3429 44.0141 24.7008 43.9211 23.0467C43.828 21.1254 43.3897 19.4202 41.9847 18.0153C40.5768 16.6073 38.8746 16.172 36.9533 16.0789C35.2962 15.9859 33.6541 16.0009 32 16.0009C30.3429 16.0009 28.7008 15.9859 27.0467 16.0789C25.1254 16.172 23.4202 16.6103 22.0153 18.0153C20.6073 19.4232 20.172 21.1254 20.0789 23.0467C19.9859 24.7038 20.0009 26.3459 20.0009 28C20.0009 29.6541 19.9859 31.2992 20.0789 32.9533C20.172 34.8746 20.6103 36.5798 22.0153 37.9847C23.4232 39.3927 25.1254 39.828 27.0467 39.9211C28.7038 40.0141 30.3459 39.9991 32 39.9991C33.6571 39.9991 35.2992 40.0141 36.9533 39.9211C38.8746 39.828 40.5798 39.3897 41.9847 37.9847C43.3927 36.5768 43.828 34.8746 43.9211 32.9533C44.0171 31.2992 43.9991 29.6571 43.9991 28ZM31.997 34.1572C28.5897 34.1572 25.8398 31.4073 25.8398 28C25.8398 24.5927 28.5897 21.8428 31.997 21.8428C35.4043 21.8428 38.1542 24.5927 38.1542 28C38.1542 31.4073 35.4043 34.1572 31.997 34.1572ZM38.4063 23.0286C37.6108 23.0286 36.9684 22.3862 36.9684 21.5907C36.9684 20.7951 37.6108 20.1527 38.4063 20.1527C39.2019 20.1527 39.8443 20.7951 39.8443 21.5907C39.8445 21.7796 39.8075 21.9667 39.7353 22.1412C39.6631 22.3158 39.5572 22.4744 39.4237 22.608C39.2901 22.7416 39.1315 22.8475 38.9569 22.9197C38.7823 22.9918 38.5952 23.0289 38.4063 23.0286Z" fill="#4DA8FF"/>
               <defs>
-              <filter id="filter0_d" x="0" y="0" width="64"height="64" filterUnits="userSpaceOnUse"color-interpolation-filters="sRGB">
-              <feFlood flood-opacity="0"result="BackgroundImageFix"/>
-              <feColorMatrix in="SourceAlpha" type="matrix"values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+              <filter id="filter0_d" x="0" y="0" width="64" height="64" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
               <feOffset dy="4"/>
               <feGaussianBlur stdDeviation="4"/>
-              <feColorMatrix type="matrix" values="0 0 0 0 00611066 0 0 0 0 0.437703 0 0 0 0 0.793181 0 0 0 015 0"/>
-              <feBlend mode="normal" in2="BackgroundImageFix"result="effect1_dropShadow"/>
-              <feBlend mode="normal" in="SourceGraphic"in2="effect1_dropShadow" result="shape"/>
+              <feColorMatrix type="matrix" values="0 0 0 0 0.0611066 0 0 0 0 0.437703 0 0 0 0 0.793181 0 0 0 0.15 0"/>
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
               </filter>
               </defs>
-            </svg>
-            <svg class="facebook-icon" width="64" height="52" viewBox="0 0 64 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+              </svg>
+            <svg width="64" height="52" viewBox="0 0 64 52" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_d)">
               <circle cx="32" cy="28" r="24" fill="white"/>
               </g>
-              <path d="M44 16H20V40H30.125V32.0312H27.0781V285625H30.125V25.9188C30.125 22.9117 31.9156 21.25 346578 21.25C35.9703 21.25 37.3438 21.4844 37.3438 214844V24.4375H35.8297C34.3391 24.4375 33.875 25.363333.875 26.3125V28.5625H37.2031L36.6711 32.0312H33875V40H44V16Z" fill="#4DA8FF"/>
+              <path d="M44 16H20V40H30.125V32.0312H27.0781V28.5625H30.125V25.9188C30.125 22.9117 31.9156 21.25 34.6578 21.25C35.9703 21.25 37.3438 21.4844 37.3438 21.4844V24.4375H35.8297C34.3391 24.4375 33.875 25.3633 33.875 26.3125V28.5625H37.2031L36.6711 32.0312H33.875V40H44V16Z" fill="#4DA8FF"/>
               <defs>
-              <filter id="filter0_d" x="0" y="0" width="64"height="64" filterUnits="userSpaceOnUse"color-interpolation-filters="sRGB">
-              <feFlood flood-opacity="0"result="BackgroundImageFix"/>
-              <feColorMatrix in="SourceAlpha" type="matrix"values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+              <filter id="filter0_d" x="0" y="0" width="64" height="64" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
               <feOffset dy="4"/>
               <feGaussianBlur stdDeviation="4"/>
-              <feColorMatrix type="matrix" values="0 0 0 0 00611066 0 0 0 0 0.437703 0 0 0 0 0.793181 0 0 0 015 0"/>
-              <feBlend mode="normal" in2="BackgroundImageFix"result="effect1_dropShadow"/>
-              <feBlend mode="normal" in="SourceGraphic"in2="effect1_dropShadow" result="shape"/>
+              <feColorMatrix type="matrix" values="0 0 0 0 0.0611066 0 0 0 0 0.437703 0 0 0 0 0.793181 0 0 0 0.15 0"/>
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
               </filter>
               </defs>
-            </svg>                
+            </svg>                  
           </div>
-          <a href="mailto:dpindur@wp.pl">dpindur@wp.pl</a>
+          <a class="email" href="mailto:dpindur@wp.pl">dpindur@wp.pl</a>
         </div>
       </section>
     </main>
