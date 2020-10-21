@@ -29,6 +29,8 @@ body {
   flex-flow: column;
   align-items: center;
   justify-content: center;
+  width: 100vw;
+  max-width: 1440px;
 }
 
 .hero {
@@ -37,8 +39,6 @@ body {
   align-items: center;  
   padding: 0;
   margin: 0;
-  width: 100vw;
-  max-width: 1440px;
   min-height: 856px;
   &__container {
     width: auto;
@@ -114,7 +114,7 @@ body {
 }
 
 .email {
-  width: auto;
+  width: max-content;
   height: 48px;
   background: $link-blue;
   border-radius: 64px;
@@ -127,6 +127,61 @@ body {
   color: $white;
   padding: 0 24px;
   text-decoration: none;
+}
+
+.skills {
+  background: $blue;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  &__header {
+    margin: 80px auto 0;
+    height: 184px;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    color: $white;
+  }
+  &__container {
+    background: pink;
+    width: 100%;
+    max-width: 1184px;
+    min-height: 692px;
+    margin: 0 auto 176px;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(280px, 1fr) );
+    column-gap: 24px;    
+  }
+}
+
+.knowledge {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  &__emoji {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 72px;
+  }
+  
+}
+.knowledge-list {
+  display: inline-block;
+  width: 225px;
+  text-align: left; 
+  list-style-type: none;
+  &__item {
+    &::before {
+        content: '✓';
+        color: green;
+    }
+  }
 }
 
 .card__container {
