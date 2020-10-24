@@ -94,7 +94,10 @@ body {
     font-weight: bold;
     font-size: 32px;
     line-height: 40px; 
-    color: $header-dark;   
+    color: $header-dark;
+    &--container {  
+      position: relative;
+    }
   }
   &__highlight{
     color: $blue;
@@ -110,6 +113,24 @@ body {
   }
   &__email {
     margin: 68px 0 0;
+  }
+  &__left-accolade {
+    position: absolute;
+    top: 0px;
+    left: -63px;
+    z-index: 0; 
+    @media screen and (max-width: 1020px) {
+      display: none;
+    }
+  }
+  &__right-accolade {
+    position: absolute;
+    top: 0px;
+    right: -63px;
+    z-index: 0; 
+    @media screen and (max-width: 1020px) {
+      display: none;
+    }
   }
 }
 
@@ -169,17 +190,26 @@ body {
     font-size: 64px;
     line-height: 72px;
   }
-  
+  &__header {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 44px;
+    color: $white;
+    margin: 0;
+  }
 }
 .knowledge-list {
   display: inline-block;
   width: 225px;
+  margin: 24px 0 0;
+  padding: 0;
   text-align: left; 
   list-style-type: none;
   &__item {
     &::before {
         content: '✓';
         color: green;
+        margin-right: 12px;
     }
   }
 }
@@ -189,9 +219,10 @@ body {
 }
 
 .internal-link {
-
-}
-
-.external-link {
-
+  color: $internal-link;
+  font-weight: 700;
+  text-decoration: underline;
+  &:hover {
+    cursor: pointer;
+  }
 }
