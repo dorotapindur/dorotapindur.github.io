@@ -39,27 +39,37 @@ body {
   align-items: center;  
   padding: 0;
   margin: 0;
-  min-height: 856px;
   &__container {
     width: auto;
     max-width: 982px;
-    min-height: 600px;
     margin: 80px auto 176px; 
     padding: 0 15px;
     display: flex;
     flex-flow: column;
     align-items: center;
     text-align: center;
+    @media screen and (max-width: 670px) {
+      margin: 44px auto 88px;
+    }
   }
   &__image-box {
     position: relative;
     margin: 50px auto 72px;
     width: 178px;
     height: 178px;
+    @media screen and (max-width: 670px) {
+      margin: 34px auto 40px;
+      width: 96px;
+      height: 96px;
+    }
   }
   &__image {
     flex-shrink: 0;
-    border-radius: 50%;      
+    border-radius: 50%;
+    @media screen and (max-width: 670px) {
+      width: 96px;
+      height: 96px;
+    }      
   }
   &__hello {
     width: 230px;
@@ -98,8 +108,12 @@ body {
     &--container {  
       position: relative;
     }
+    @media screen and (max-width: 670px) {
+      font-size: 26px;
+      line-height: 32px;
+    }
   }
-  &__highlight{
+  &__highlight {
     color: $blue;
   }
   &__description {
@@ -110,9 +124,16 @@ body {
     font-weight: 300;
     font-size: 20px;
     line-height: 40px;
+    @media screen and (max-width: 670px) {
+      font-size: 16px;
+      line-height: 32px;
+    }
   }
   &__email {
     margin: 68px 0 0;
+    @media screen and (max-width: 670px) {
+      margin: 48px 0 0;
+    }
   }
   &__left-accolade {
     position: absolute;
@@ -159,22 +180,63 @@ body {
   width: 100%;
   text-align: center;
   &__header {
-    margin: 80px auto 0;
-    height: 184px;
+    margin: 80px auto 64px;
+    height: 56px;
     font-weight: bold;
     font-size: 48px;
     line-height: 56px;
     color: $white;
+    @media screen and (max-width: 670px) {
+      margin: 64px auto 64px;
+      font-size: 36px;
+      line-height: 48px;
+    }
   }
   &__container {
-    background: pink;
     width: 100%;
     max-width: 1184px;
-    min-height: 692px;
-    margin: 0 auto 176px;
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(280px, 1fr) );
-    column-gap: 24px;    
+    column-gap: 24px; 
+    padding: 0 0 102px;
+    @media screen and (max-width: 670px) {
+      padding: 0 0 22px;
+    }   
+  }
+  &__list {
+    display: inline-block;
+    width: 225px;
+    margin: 24px 0 0;
+    padding: 0;
+    text-align: left; 
+    list-style-type: none;    
+  }
+  &__item {
+    color: $blue-light;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 36px;
+    &--knowledge {
+      &::before {
+        content: '✓';
+        color: $green;
+        margin-right: 12px;
+      }
+    }
+    &--something {
+      &::before {
+        content: '✓';
+        color: $blue-light;
+        margin-right: 12px;
+      }
+    }
+    &--want {
+      &::before {
+        content: '·';
+        color: $blue-light;
+        margin-right: 12px;
+      }
+    }
   }
 }
 
@@ -182,7 +244,7 @@ body {
   display: flex;
   flex-flow: column;
   align-items: center;
-  justify-content: center;
+  margin-bottom: 64px;
   &__emoji {
     font-family: Helvetica;
     font-style: normal;
@@ -198,22 +260,46 @@ body {
     margin: 0;
   }
 }
-.knowledge-list {
-  display: inline-block;
-  width: 225px;
-  margin: 24px 0 0;
-  padding: 0;
-  text-align: left; 
-  list-style-type: none;
-  &__item {
-    &::before {
-        content: '✓';
-        color: green;
-        margin-right: 12px;
-    }
+.something {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-bottom: 64px;
+  &__emoji {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 72px;
+  }
+  &__header {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 44px;
+    color: $white;
+    margin: 0;
   }
 }
-
+.want {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-bottom: 64px;
+  &__emoji {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 72px;
+  }
+  &__header {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 44px;
+    color: $white;
+    margin: 0;
+  }
+}
 .card__container {
   font-family: 'Roboto Mono', monospace;
 }
