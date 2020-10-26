@@ -212,7 +212,7 @@ body {
     list-style-type: none;    
   }
   &__item {
-    color: $blue-light;
+    color: $light-blue;
     font-weight: 600;
     font-size: 16px;
     line-height: 36px;
@@ -226,14 +226,14 @@ body {
     &--something {
       &::before {
         content: '✓';
-        color: $blue-light;
+        color: $light-blue;
         margin-right: 12px;
       }
     }
     &--want {
       &::before {
         content: '·';
-        color: $blue-light;
+        color: $light-blue;
         margin-right: 12px;
       }
     }
@@ -300,8 +300,161 @@ body {
     margin: 0;
   }
 }
-.card__container {
-  font-family: 'Roboto Mono', monospace;
+
+.projects {
+  display: flex;
+  flex-flow: column;
+  align-items: center;  
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  &__header {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    color: $header-dark;
+    margin: 80px 0 40px;
+  }
+  &__intro {
+    max-width: 782px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    color: $text-dark;
+    margin: 0 15px 128px;
+  }
+  &__container {
+    width: 100%;
+    max-width: 1184px;
+    margin: 0 0 176px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(580px, 1fr) );
+    column-gap: 24px;
+    row-gap: 24px;
+    justify-items: center;
+    list-style-type: none;
+  }
+}
+.card {
+  width: 580px;
+  height: 324px;
+  background: grey;
+  background: linear-gradient(0deg, #212528 87%, #1E1E1E 87%);
+  border-radius: 16px;
+  position: relative;
+  font-family: Roboto Mono;
+  &__grey-dots {
+    margin: 16px auto 16px 16px;
+  }
+  &__github-icon {
+    position: absolute;
+    top: 58px;
+    left: 48px;
+  }
+  &__text-container {
+    width: 484px;
+    height: 136px;
+    position: absolute;
+    top: 106px;
+    left: 48px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 116px 364px;
+    grid-template-rows: 24px 40px 24px 24px;
+    column-gap: 4px;
+    row-gap: 8px;
+  }
+  &__category {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    font-size: 16px;
+    line-height: 24px;
+    color: $console-grey;
+  }
+  &__content {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    &--project {
+      color: $white;
+      font-weight: bold;
+    }
+    &--description {
+      color: $console-grey-bold;
+    }
+    &--demo {
+      color: $console-grey;
+    }
+    &--source {
+      color: $console-grey;
+    }
+  }
+  &__link {
+    color: $console-blue;
+    &:hover {
+      color: $console-hover-blue;
+    }
+  }
+}
+
+.contact {
+  margin: 0;
+  background: $light-blue;
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;  
+  padding: 0;
+  &__header{
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    color: $header-dark;
+    margin: 80px 0 40px;
+  }
+  &__text {
+    max-width: 782px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    color: $text-dark;
+    margin: 0 15px 128px;
+  }
+  &__low-bar {
+    width: 580px;
+    margin: 0 0 176px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__icon-container {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+  }
+}
+.github-icon {
+  margin: 0;
+  padding: 0;
+}
+.insta-icon {
+  margin: 0;
+  padding: 0;
+}
+.facebook-icon {
+  margin: 0;
+  padding: 0;
 }
 
 .internal-link {
