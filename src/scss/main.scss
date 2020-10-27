@@ -315,6 +315,10 @@ body {
     text-align: center;
     color: $header-dark;
     margin: 80px 0 40px;
+    @media screen and (max-width: 670px) {
+      font-size: 36px;
+      line-height: 48px;
+    }
   }
   &__intro {
     max-width: 782px;
@@ -324,6 +328,10 @@ body {
     text-align: center;
     color: $text-dark;
     margin: 0 15px 128px;
+    @media screen and (max-width: 670px) {
+      font-size: 16px;
+      line-height: 32px;
+    }
   }
   &__container {
     width: 100%;
@@ -336,6 +344,9 @@ body {
     row-gap: 24px;
     justify-items: center;
     list-style-type: none;
+    @media screen and (max-width: 670px) {
+      grid-template-columns: 1fr;
+    }
   }
 }
 .card {
@@ -346,26 +357,49 @@ body {
   border-radius: 16px;
   position: relative;
   font-family: Roboto Mono;
+  @media screen and (max-width: 670px) {
+    width: 288px;
+    height: 320px;
+  }
   &__grey-dots {
-    margin: 16px auto 16px 16px;
+    margin: 16px 0 0 16px;
   }
   &__github-icon {
     position: absolute;
     top: 58px;
     left: 48px;
+    @media screen and (max-width: 670px) {
+      top: 64px;
+      left: 16px;
+    }
   }
   &__text-container {
     width: 484px;
-    height: 136px;
     position: absolute;
     top: 106px;
     left: 48px;
     padding: 0;
     display: grid;
-    grid-template-columns: 116px 364px;
-    grid-template-rows: 24px 40px 24px 24px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 24px;
+    @media screen and (max-width: 670px) {
+      width: 255px;
+      min-height: 160px;
+      top: 112px;
+      left: 16px;
+    }
+  }
+  &__smaller-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 24% 76%;
+    grid-template-rows: auto auto;
     column-gap: 4px;
     row-gap: 8px;
+    @media screen and (max-width: 670px) {
+      grid-template-columns: 40% 60%;
+    }
   }
   &__category {
     margin: 0;
@@ -374,19 +408,30 @@ body {
     font-size: 16px;
     line-height: 24px;
     color: $console-grey;
+    @media screen and (max-width: 670px) {
+      font-size: 13px;
+    }
   }
   &__content {
+    max-width: 100%;
     margin: 0;
     padding: 0;
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
+    @media screen and (max-width: 670px) {
+      font-size: 13px;
+    }
     &--project {
       color: $white;
       font-weight: bold;
+      max-height: 48px;
+      overflow-y: auto;
     }
     &--description {
       color: $console-grey-bold;
+      max-height: 70px;
+      overflow-y: auto;
     }
     &--demo {
       color: $console-grey;
@@ -411,7 +456,7 @@ body {
   display: flex;
   flex-flow: column;
   align-items: center;  
-  padding: 0;
+  padding: 0 16px;
   &__header{
     font-weight: bold;
     font-size: 48px;
@@ -419,6 +464,10 @@ body {
     text-align: center;
     color: $header-dark;
     margin: 80px 0 40px;
+    @media screen and (max-width: 670px) {
+      font-size: 36px;
+      line-height: 48px;
+    }
   }
   &__text {
     max-width: 782px;
@@ -427,14 +476,25 @@ body {
     line-height: 40px;
     text-align: center;
     color: $text-dark;
-    margin: 0 15px 128px;
+    margin: 0 0 128px;
+    @media screen and (max-width: 670px) {
+      font-size: 16px;
+      line-height: 32px;
+    }
   }
   &__low-bar {
     width: 580px;
+    max-width: 100%;
     margin: 0 0 176px;
     padding: 0;
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 670px) {
+      width: 278px;
+      height: 160px;
+      flex-flow: column;
+      align-items: center;
+    }
   }
   &__icon-container {
     width: 200px;
