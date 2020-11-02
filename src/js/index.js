@@ -25,8 +25,8 @@ fetch('https://api.github.com/users/dorotapindur/repos?sort=created&direction=as
             <p class="card__category">description:</p> <p class="card__content card__content--description">${description}</p>
           </div>
           <div class="card__smaller-container">
-            <p class="card__category">demo:</p> <p class="card__content card__content--demo">&lt;<a class="card__link" href="https://dorotapindur.github.io/${name}/" rel="noopener" target=_blank>link to demo</a>&gt;</p>
-            <p class="card__category">github:</p> <p class="card__content card__content--source">&lt;<a class="card__link" href="${html_url}" rel="noopener" target=_blank>source code</a>&gt;</p>
+            <p class="card__category">demo:</p> <p class="card__content card__content--demo">&lt;<a class="card__link" href="https://dorotapindur.github.io/${name}/" rel="noopener" target=_blank title="link to ${name} demo">link to demo</a>&gt;</p>
+            <p class="card__category">github:</p> <p class="card__content card__content--source">&lt;<a class="card__link" href="${html_url}" rel="noopener" target=_blank title="link to ${name} repository">source code</a>&gt;</p>
           </div>
         </div>
     </li>`;
