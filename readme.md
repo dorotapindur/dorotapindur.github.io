@@ -1,18 +1,8 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
+![cover](src/assets/img/portfolio-og.png)
 
-# WTF Webpack Starter Kit 
+# Dorota Pindur - portfolio 
 
-Simple toolkit for your static websites development.
+This is my simle portfolio created during ["WTF: Co Ten Frontend"](https://cotenfrontend.pl) course. See it on [https://dorotapindur.github.io](https://dorotapindur.github.io).
 
-## How to use it?
-
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
-
-## Available scripts
-
-`npm run start` - runs development mode
-
-`npm run build` - runs build process for production
-
-`npm run publish` - runs build process and publish the page using `gh-pages` branch
+Built in Maciek Korsan's [wtf-webpack}(https://github.com/maciejkorsan/wtf-webpack-starter).
 
