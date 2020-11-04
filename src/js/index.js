@@ -2,6 +2,17 @@ import '../scss/main.scss';
 
 console.log('HELLO 🚀')
 
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+
 const repositoryList = document.querySelector('.repository-list--js');
 
 fetch('https://api.github.com/users/dorotapindur/repos?sort=created&direction=asc')
