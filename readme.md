@@ -1,4 +1,4 @@
-![cover](portfolio-og.png)
+![cover](src/assets/img/portfolio-og.png)
 
 # Dorota Pindur - portfolio 
 
