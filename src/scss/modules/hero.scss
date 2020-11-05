@@ -1,0 +1,121 @@
+.hero {
+    display: flex;
+    flex-flow: column;
+    align-items: center;  
+    padding: 0;
+    margin: 0;
+    &__container {
+      width: auto;
+      max-width: 982px;
+      margin: 80px auto 176px; 
+      padding: 0 15px;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      text-align: center;
+      @media screen and (max-width: 670px) {
+        margin: 44px auto 88px;
+      }
+    }
+    &__image-box {
+      position: relative;
+      margin: 50px auto 72px;
+      width: 178px;
+      height: 178px;
+      @media screen and (max-width: 670px) {
+        margin: 34px auto 40px;
+        width: 96px;
+        height: 96px;
+      }
+    }
+    &__image {
+      flex-shrink: 0;
+      border-radius: 50%;
+      @media screen and (max-width: 670px) {
+        width: 96px;
+        height: 96px;
+      }      
+    }
+    &__hello {
+      width: 230px;
+      height: 72px;
+      margin: 0;
+      border-radius: 16px;
+      position: absolute;
+      top: -50px;
+      left: 178px;
+      background-color: $blue;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 40px;
+      padding: 16px 0px 0px 19px;
+      text-align: left;
+      color: $white;
+      @media screen and (max-width: 670px) {
+        display: none;
+      }
+      &--speech {
+        position: absolute;
+        top: 72px;
+        left: 32px;
+        @media screen and (max-width: 670px) {
+          display: none;
+        }
+      }
+    }
+    &__header {
+      margin: 0;
+      max-width: 830px;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 40px; 
+      color: $header-dark;
+      &--container {  
+        position: relative;
+      }
+      @media screen and (max-width: 670px) {
+        font-size: 26px;
+        line-height: 32px;
+      }
+    }
+    &__highlight {
+      color: $blue;
+    }
+    &__description {
+      max-width: 830px;
+      margin: 24px 0 0;
+      padding: 0;
+      color: $text-dark;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 40px;
+      @media screen and (max-width: 670px) {
+        font-size: 16px;
+        line-height: 32px;
+      }
+    }
+    &__email {
+      margin: 68px 0 0;
+      @media screen and (max-width: 670px) {
+        margin: 48px 0 0;
+      }
+    }
+    &__left-accolade {
+      position: absolute;
+      top: 0px;
+      left: -63px;
+      z-index: 0; 
+      @media screen and (max-width: 1020px) {
+        display: none;
+      }
+    }
+    &__right-accolade {
+      position: absolute;
+      top: 0px;
+      right: -63px;
+      z-index: 0; 
+      @media screen and (max-width: 1020px) {
+        display: none;
+      }
+    }
+  }

@@ -1,0 +1,147 @@
+.projects {
+    display: flex;
+    flex-flow: column;
+    align-items: center;  
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    &__header {
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 56px;
+      text-align: center;
+      color: $header-dark;
+      margin: 80px 0 40px;
+      @media screen and (max-width: 670px) {
+        font-size: 36px;
+        line-height: 48px;
+      }
+    }
+    &__intro {
+      max-width: 782px;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 40px;
+      text-align: center;
+      color: $text-dark;
+      margin: 0 15px 128px;
+      @media screen and (max-width: 670px) {
+        font-size: 16px;
+        line-height: 32px;
+      }
+    }
+    &__container {
+      width: 100%;
+      max-width: 1184px;
+      margin: 0 0 176px;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat( auto-fit, minmax(580px, 1fr) );
+      column-gap: 24px;
+      row-gap: 24px;
+      justify-items: center;
+      list-style-type: none;
+      @media screen and (max-width: 670px) {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+  .card {
+    width: 580px;
+    height: 324px;
+    background: grey;
+    background: linear-gradient(0deg, #212528 87%, #1E1E1E 87%);
+    border-radius: 16px;
+    position: relative;
+    font-family: Roboto Mono;
+    @media screen and (max-width: 670px) {
+      width: 288px;
+      height: 320px;
+    }
+    &__grey-dots {
+      margin: 16px 0 0 16px;
+    }
+    &__github-icon {
+      position: absolute;
+      top: 58px;
+      left: 48px;
+      @media screen and (max-width: 670px) {
+        top: 64px;
+        left: 16px;
+      }
+    }
+    &__text-container {
+      width: 484px;
+      position: absolute;
+      top: 106px;
+      left: 48px;
+      padding: 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+      row-gap: 24px;
+      @media screen and (max-width: 670px) {
+        width: 255px;
+        min-height: 160px;
+        top: 112px;
+        left: 16px;
+      }
+    }
+    &__smaller-container {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 24% 76%;
+      grid-template-rows: auto auto;
+      column-gap: 4px;
+      row-gap: 8px;
+      @media screen and (max-width: 670px) {
+        grid-template-columns: 40% 60%;
+      }
+    }
+    &__category {
+      margin: 0;
+      padding: 0;
+      text-align: right;
+      font-size: 16px;
+      line-height: 24px;
+      color: $console-grey;
+      @media screen and (max-width: 670px) {
+        font-size: 13px;
+      }
+    }
+    &__content {
+      max-width: 100%;
+      margin: 0;
+      padding: 0;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      @media screen and (max-width: 670px) {
+        font-size: 13px;
+      }
+      &--project {
+        color: $white;
+        font-weight: bold;
+        max-height: 48px;
+        overflow-y: auto;
+      }
+      &--description {
+        color: $console-grey-bold;
+        max-height: 70px;
+        overflow-y: auto;
+      }
+      &--demo {
+        color: $console-grey;
+      }
+      &--source {
+        color: $console-grey;
+      }
+    }
+    &__link {
+      color: $console-blue;
+      &:hover {
+        color: $console-hover-blue;
+      }
+    }
+  }
+  
