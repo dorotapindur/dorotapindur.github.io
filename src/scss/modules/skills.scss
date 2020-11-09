@@ -19,6 +19,19 @@
         line-height: 48px;
       }
     }
+    &__article {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      margin-bottom: 64px;
+    }
+    &__secondary-header {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 44px;
+      color: $white;
+      margin: 16px 0 0;
+    }
     &__container {
       width: 100%;
       max-width: 1184px;
@@ -64,66 +77,5 @@
           margin-right: 12px;
         }
       }
-    }
-  }
-
-  .knowledge {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    margin-bottom: 64px;
-    &__emoji {
-      font-family: Helvetica;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 64px;
-      line-height: 72px;
-    }
-    &__header {
-      font-weight: bold;
-      font-size: 24px;
-      line-height: 44px;
-      color: $white;
-      margin: 0;
-    }
-  }
-  .something {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    margin-bottom: 64px;
-    &__emoji {
-      font-family: Helvetica;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 64px;
-      line-height: 72px;
-    }
-    &__header {
-      font-weight: bold;
-      font-size: 24px;
-      line-height: 44px;
-      color: $white;
-      margin: 0;
-    }
-  }
-  .want {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    margin-bottom: 64px;
-    &__emoji {
-      font-family: Helvetica;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 64px;
-      line-height: 72px;
-    }
-    &__header {
-      font-weight: bold;
-      font-size: 24px;
-      line-height: 44px;
-      color: $white;
-      margin: 0;
     }
   }

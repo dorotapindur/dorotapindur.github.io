@@ -63,6 +63,11 @@
         }
       }
     }
+    &__emoji {
+      position: absolute;
+      top: 16px;
+      right: 19px;
+    }
     &__header {
       margin: 0;
       max-width: 830px;
