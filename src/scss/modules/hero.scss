@@ -54,13 +54,15 @@
       @media screen and (max-width: 670px) {
         display: none;
       }
-      &--speech {
+      &:after {
+        content: "";
+        display: block;
+        width: 17.42px;
+        height: 22.66px;
+        background: url('../assets/icons/Speech_cloud.svg');
         position: absolute;
         top: 72px;
         left: 32px;
-        @media screen and (max-width: 670px) {
-          display: none;
-        }
       }
     }
     &__emoji {
