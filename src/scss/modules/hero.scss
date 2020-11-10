@@ -77,8 +77,25 @@
       font-size: 32px;
       line-height: 40px; 
       color: $header-dark;
-      &--container {  
-        position: relative;
+      position: relative;
+      &::before, &::after {
+        width: 84px;
+        height: 255px;
+        content: "";
+        position: absolute;
+        top: 0;
+        display: block;
+        @media screen and (max-width: 1020px) {
+          display: none;
+        }
+      }
+      &::before {
+        background: url('../assets/icons/left-accollade.svg');
+        right: 100%;
+      }
+      &::after {
+        background: url('../assets/icons/right-accollade.svg');
+        left: 100%;
       }
       @media screen and (max-width: 670px) {
         font-size: 26px;
@@ -87,6 +104,7 @@
     }
     &__highlight {
       color: $blue;
+      white-space: nowrap;
     }
     &__description {
       max-width: 830px;
@@ -105,24 +123,6 @@
       margin: 68px 0 0;
       @media screen and (max-width: 670px) {
         margin: 48px 0 0;
-      }
-    }
-    &__left-accolade {
-      position: absolute;
-      top: 0px;
-      left: -63px;
-      z-index: 0; 
-      @media screen and (max-width: 1020px) {
-        display: none;
-      }
-    }
-    &__right-accolade {
-      position: absolute;
-      top: 0px;
-      right: -63px;
-      z-index: 0; 
-      @media screen and (max-width: 1020px) {
-        display: none;
       }
     }
   }
