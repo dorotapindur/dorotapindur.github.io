@@ -82,11 +82,13 @@
       row-gap: 8px;
       column-gap: 4px;
       @media screen and (max-width: 670px) {
+        grid-template-rows: max(48px) 48px 48px 24px;
         grid-template-columns: 40% 60%;
         width: 255px;
         min-height: 160px;
         top: 112px;
         left: 16px;
+        word-wrap: break-word;
       }
     }
     &__category {
