@@ -1,4 +1,4 @@
-![cover](https://dorotapindur.github.io/portfolio-og.png)
+![keys](https://dorotapindur.github.io/portfolio-og.png)
 
 # Dorota Pindur - portfolio 
 
