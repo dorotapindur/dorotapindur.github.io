@@ -70,10 +70,10 @@
     }
     &__emoji {
       position: absolute;
-      top: 16px;
-      right: 19px;
+      top: 22px;
+      right: 22px;
       animation: wave 1s ease-in-out infinite;
-      transform-origin: center;
+      transform-origin: bottom right;
     }
     &__header {
       margin: 0;
