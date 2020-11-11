@@ -17,6 +17,7 @@
       @media screen and (max-width: 670px) {
         font-size: 36px;
         line-height: 48px;
+        margin: 64px 0 32px;
       }
     }
     &__text {
@@ -30,12 +31,13 @@
       @media screen and (max-width: 670px) {
         font-size: 16px;
         line-height: 32px;
+        margin: 0 0 56px;
       }
     }
     &__low-bar {
       width: 580px;
       max-width: 100%;
-      margin: 0 0 176px;
+      margin: 0 0 156px;
       padding: 0;
       display: flex;
       justify-content: space-between;
@@ -44,6 +46,7 @@
         height: 160px;
         flex-flow: column;
         align-items: center;
+        margin: 0 0 88px;
       }
     }
     &__icon-container {
