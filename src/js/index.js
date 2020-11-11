@@ -1,17 +1,6 @@
 import '../scss/main.scss';
 
-console.log('HELLO 🚀')
-
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-
+console.log("Hi, I'm Dora - nice to meet you! 🚀")
 
 const repositoryList = document.querySelector('.repository-list--js');
 
@@ -32,8 +21,8 @@ fetch('https://api.github.com/users/dorotapindur/repos?sort=created&direction=as
             <p class="card__category">project:</p> <p class="card__content card__content--project">${name}</p>
             <p class="card__category">description:</p> <p class="card__content card__content--description">${description}</p>
           
-            <p class="card__category card__category--demo">demo:</p> <p class="card__content card__content--demo">&lt;<a class="card__link" href="${homepage}" rel="noopener" target=_blank title="${name} - demo">link to demo</a>&gt;</p>
-            <p class="card__category">github:</p> <p class="card__content card__content--source">&lt;<a class="card__link" href="${html_url}" rel="noopener" target=_blank title="${name} - repository">source code</a>&gt;</p>
+            <p class="card__category card__category--demo">demo:</p> <p class="card__content card__content--demo">&lt;<a class="card__link" href="${homepage}" rel="noopener noreferrer" target=_blank title="${name} - demo">link to demo</a>&gt;</p>
+            <p class="card__category">github:</p> <p class="card__content card__content--source">&lt;<a class="card__link" href="${html_url}" rel="noopener noreferrer" target=_blank title="${name} - repository">source code</a>&gt;</p>
         </div>
       </li>`;
 

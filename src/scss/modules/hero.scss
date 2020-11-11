@@ -1,3 +1,5 @@
+@import "wave.scss";
+
 .hero {
     display: flex;
     flex-flow: column;
@@ -37,7 +39,8 @@
       }      
     }
     &__hello {
-      width: 230px;
+      width: min-content;
+      white-space: nowrap;
       height: 72px;
       margin: 0;
       border-radius: 16px;
@@ -48,7 +51,7 @@
       font-size: 32px;
       font-weight: 700;
       line-height: 40px;
-      padding: 16px 0px 0px 19px;
+      padding: 16px 56px 16px 19px;
       text-align: left;
       color: $white;
       @media screen and (max-width: 670px) {
@@ -69,6 +72,8 @@
       position: absolute;
       top: 16px;
       right: 19px;
+      animation: wave 1s ease-in-out infinite;
+      transform-origin: center;
     }
     &__header {
       margin: 0;
