@@ -39,9 +39,8 @@
       }      
     }
     &__hello {
-      width: min-content;
-      white-space: nowrap;
-      height: 72px;
+      max-width: 300px;
+      height: auto;
       margin: 0;
       border-radius: 16px;
       position: absolute;
@@ -64,7 +63,7 @@
         height: 22.66px;
         background: url('../assets/icons/Speech_cloud.svg');
         position: absolute;
-        top: 72px;
+        top: 100%;
         left: 32px;
       }
     }
