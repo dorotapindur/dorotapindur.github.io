@@ -51,6 +51,11 @@ body {
   color: $white;
   padding: 0 24px;
   text-decoration: none;
+  transform: scale(1);
+  transition: transform .5s linear;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .internal-link {
