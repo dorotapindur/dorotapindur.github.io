@@ -5,6 +5,8 @@
 @import "modules/skills.scss";
 @import "modules/projects.scss";
 @import "modules/contact.scss";
+@import "modules/green-squares.scss";
+
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;700&family=Roboto+Mono:wght@400;700&display=swap');
 
@@ -18,7 +20,7 @@ html {
 }
 
 body {
-  background: $white;
+  background: $main-background;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,19 +30,21 @@ body {
 }
 
 .main {
-  background: $white;
+  background: $main-background;
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
   width: 100vw;
-  max-width: 1440px;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 
 .email {
   width: max-content;
   height: 48px;
-  background: $link-blue;
+  background: $email-background;
   border-radius: 64px;
   display: flex;
   align-items: center;
@@ -48,7 +52,7 @@ body {
   font-weight: bold;
   font-size: 20px;
   line-height: 40px;
-  color: $white;
+  color: $main-background;
   padding: 0 24px;
   text-decoration: none;
   transform: scale(1);

@@ -2,6 +2,35 @@ import '../scss/main.scss';
 
 console.log("Hi, I'm Dora - nice to meet you! 🚀")
 
+//green-squares
+const box = document.getElementById("box");
+function getRandom(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+let screenWidth = window.screen.width;
+const quantity = Math.floor(screenWidth/2);
+console.log(quantity);
+for (let i=0; i<=quantity; i++) {
+  const random = getRandom(0, quantity);
+  if (i > random) {
+    box.innerHTML += '<div class="green-square lightgreen"></div>';
+  } else {
+    box.innerHTML += '<div class="green-square"></div>';
+  };
+};
+const allSquares = document.querySelectorAll('.green-square');
+function pickAnimatedSquare() {
+  const square = getRandom(0, quantity);
+  allSquares[square].className += ' blink';
+};
+const interval = setInterval(() => {
+  pickAnimatedSquare();
+}, 2000);
+
+//
+
 const repositoryList = document.querySelector('.repository-list--js');
 
 fetch('https://api.github.com/users/dorotapindur/repos?sort=created&direction=asc')

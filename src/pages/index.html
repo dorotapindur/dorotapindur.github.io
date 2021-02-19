@@ -19,19 +19,21 @@
   </head>
   <body>
     <main class="main">
+      <div class="green-lights-box" id="box"></div>
       <section class="hero">
-        <div class="hero__container">
-          <div class="hero__image-box">
-            <img class="hero__image" src="../assets/img/DoraPindur.jpg" alt="photo of Dorota Pindur" width="178" height="178">
-            <span class="hero__hello">Hello!
-              <img class="hero__emoji" alt="" src="../assets/icons/hand.svg"> 
-            </span>
-          </div>
-            <h1 class="hero__header">My name is Dorota and I'm an&nbsp;aspiring <span class="hero__highlight">Frontend developer</span>, a&nbsp;violinist and an&nbsp;urban sketcher.</h1>
-          <p class="hero__description">You might be interested in checking the list of <a class="internal-link" href="#skills">my&nbsp;skills</a>. Don't forget to have a glimpse at <a class="internal-link" href="#projects">my&nbsp;projects</a>. Currently I'm looking for new challenges so if you have one - <a class="internal-link" href="#contact">contact&nbsp;me</a> 🙂</p>
+        <img class="hero__image" src="../assets/img/DoraPindur.jpg" alt="photo of Dorota Pindur" width="178"height="178" />
+        <div class="hero__wrapper">
+          <h1 class="hero__header">Dorota Pindur</h1>
+          <span class="hero__description">Aspiring front-end developer</span>
+        </div>
+      </section>
 
-          <a class="email hero__email" href="mailto:dpindur@wp.pl">dpindur@wp.pl</a>
-        </div>  
+      <section class="projects" id="projects">
+        <h2 class="projects__header">My projects</h2>
+        <div class="carousel-container carousel--js"></div>
+          <ul class="projects__container repository-list--js">
+            
+          </ul>
       </section>
 
       <section class="skills" id="skills">
@@ -83,13 +85,7 @@
         </div>
       </section>
 
-      <section class="projects" id="projects">
-        <h2 class="projects__header">Recent projects</h2>
-        <p class="projects__intro">I started my frontend developer path in April 2020. Since then, I've built some projects. Here's the list of the things I've done so far.</p>
-          <ul class="projects__container repository-list--js">
-            
-          </ul>
-      </section>
+      
 
       <section class="contact" id="contact">
         <h2 class="contact__header">Contact me</h2>
