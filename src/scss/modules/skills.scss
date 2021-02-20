@@ -7,16 +7,14 @@
     width: 100%;
     text-align: center;
     &__header {
-      margin: 80px auto 64px;
+      margin: 0;
       height: 56px;
       font-weight: bold;
-      font-size: 48px;
-      line-height: 56px;
+      font-size: 40px;
       color: $header;
       @media screen and (max-width: 670px) {
-        margin: 64px auto 64px;
-        font-size: 36px;
-        line-height: 48px;
+        margin: 0;
+        font-size: 32px;
       }
     }
     &__container {
@@ -25,9 +23,9 @@
       display: grid;
       grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
       column-gap: 24px; 
-      padding: 0 24px 102px;
+      padding: 0;
       @media screen and (max-width: 670px) {
-        padding: 0 0 22px;
+        padding: 0;
       }   
     }
     &__article {
@@ -35,7 +33,6 @@
       display: flex;
       flex-flow: column;
       align-items: center;
-      margin-bottom: 64px;
     }
     &__secondary-header {
       font-weight: bold;
@@ -46,10 +43,9 @@
     }
     &__list {
       display: inline-block;
-      align-self: flex-start;
       max-width: 100%;
       margin: 24px 0 0;
-      padding: 0 24px;
+      padding: 0;
       text-align: left; 
       list-style-type: none;    
     }

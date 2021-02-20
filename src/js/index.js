@@ -10,7 +10,7 @@ function getRandom(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 let screenWidth = window.screen.width;
-const quantity = Math.floor(screenWidth/2);
+const quantity = Math.floor(screenWidth/1.5);
 console.log(quantity);
 for (let i=0; i<=quantity; i++) {
   const random = getRandom(0, quantity);
@@ -29,7 +29,7 @@ const interval = setInterval(() => {
   pickAnimatedSquare();
 }, 2000);
 
-//
+
 
 const repositoryList = document.querySelector('.repository-list--js');
 
@@ -38,14 +38,11 @@ fetch('https://api.github.com/users/dorotapindur/repos?sort=created&direction=as
 .then(resp => {
     for (let repo of resp) {
         const{name, html_url, description, homepage} = repo;
+        const image = '';
         console.log(`NAME: ${name} ADDRESS: ${html_url} DESCRIPTION: ${description} DEMO: ${homepage}`);
         const cardTemplate = `<li class="card">
-        <svg class="card__grey-dots" width="40" height="8" viewBox="0 0 40 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="4" cy="4" r="4" fill="#464A4D"/>
-          <circle cx="20" cy="4" r="4" fill="#464A4D"/>
-          <circle cx="36" cy="4" r="4" fill="#464A4D"/>
-        </svg>
-        <img src="img/Github-white.svg" class="card__github-icon" width="24" height="24" alt="">
+        <img src="img/Github-white.svg" class="card__github-icon" width="24" height="24" alt="" />
+         <img class="card__thumbnail" src="./src/assets/img/the-x-animation.jpg" alt="project thumbnail image" />
         <div class="card__text-container">
             <p class="card__category">project:</p> <p class="card__content card__content--project">${name}</p>
             <p class="card__category">description:</p> <p class="card__content card__content--description">${description}</p>
@@ -64,3 +61,4 @@ fetch('https://api.github.com/users/dorotapindur/repos?sort=created&direction=as
     console.log(error);
     console.log('api connection failed');    
 })
+
