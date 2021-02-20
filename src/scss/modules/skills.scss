@@ -5,7 +5,9 @@
     align-items: center;
     width: 100%;
     text-align: center;
-    margin: 30px 0;
+    margin: 30px 0 0;
+    padding: 30px 0 0;
+    box-shadow: 0 0 10px $shadow;
     &__header {
       margin: 0;
       height: 56px;
@@ -33,21 +35,23 @@
       display: flex;
       flex-flow: column;
       align-items: center;
+      margin-bottom: 25px;
     }
     &__secondary-header {
       font-weight: bold;
       font-size: 24px;
       line-height: 44px;
       color: $header;
-      margin: 16px 0 0;
+      margin: 0;
     }
     &__list {
       display: inline-block;
       max-width: 100%;
-      margin: 24px 0 0;
-      padding: 0;
+      margin: 0;
+      padding: 0 0 0 40px;
       text-align: left; 
-      list-style-type: none;    
+      list-style-type: none;
+      align-self: flex-start;
     }
     &__item {
       color: $text;

@@ -20,7 +20,7 @@ let observer = new IntersectionObserver((entries) => {
 card.forEach((section) => {
   observer.observe(section);
 });
-/*
+
 //green-squares
 const box = document.getElementById("box");
 function getRandom(min, max) {
@@ -31,14 +31,16 @@ function getRandom(min, max) {
 let screenWidth = window.screen.width;
 const quantity = Math.floor(screenWidth/1.5);
 console.log(quantity);
+let greenBoxTemplate = '';
 for (let i=0; i<=quantity; i++) {
   const random = getRandom(0, quantity);
   if (i > random) {
-    box.innerHTML += '<div class="green-square lightgreen"></div>';
+    greenBoxTemplate += '<div class="green-square lightgreen"></div>';
   } else {
-    box.innerHTML += '<div class="green-square"></div>';
+    greenBoxTemplate += '<div class="green-square"></div>';
   };
 };
+box.innerHTML = greenBoxTemplate;
 const allSquares = document.querySelectorAll('.green-square');
 function pickAnimatedSquare() {
   const square = getRandom(0, quantity);

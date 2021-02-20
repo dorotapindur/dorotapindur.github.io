@@ -6,7 +6,7 @@
     display: flex;
     flex-flow: column;
     align-items: center;  
-    padding: 0;
+    padding: 0 10px;
     &__header{
       font-weight: bold;
       font-size: 40px;
@@ -61,5 +61,25 @@
       &:hover {
         transform: scale(1.2);
       }
+    }
+  }
+  .email {
+    width: max-content;
+    height: 48px;
+    background: $email-background;
+    border-radius: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+    color: $main-background;
+    padding: 0 24px;
+    text-decoration: none;
+    transform: scale(1);
+    transition: transform .5s linear;
+    &:hover {
+      transform: scale(1.1);
     }
   }

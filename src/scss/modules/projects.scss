@@ -15,6 +15,11 @@
         font-size: 32px;
       }
     }
+    &__description {
+      color: $text;
+      text-align: center;
+      padding: 0 10px;
+    }
     &__container {
       width: 90%;
       max-width: 1200px;
@@ -48,6 +53,7 @@
     position: relative;
     @media screen and (max-width: 550px) {
       width: 90%;
+      border-radius: 8px;
     }
     &__github-icon {
       position: absolute;
@@ -61,6 +67,9 @@
       margin: 16px auto;
       border-radius: 5px;
       box-shadow: 0 0 5px rgba(136, 136, 136, 0.411);
+      @media screen and (max-width: 550px) {
+        margin: 8px auto;
+      }
     }
     &__text-container {
       width: 95%;
@@ -84,7 +93,7 @@
       margin: 0;
       padding: 0;
       text-align: right;
-      color: $console-grey;
+      color: $console-category;
       &--description {
         margin-top: 24px;
       }
@@ -98,26 +107,26 @@
       padding: 0;
       font-weight: normal;
       &--project {
-        color: white;
+        color: $console-text;
         font-weight: bold;
         overflow-y: auto;
       }
       &--description {
-        color: $console-grey-bold;
+        color: $console-text;
         overflow-y: auto;
       }
       &--demo {
-        color: $console-grey;
+        color: $console-category;
       }
       &--source {
-        color: $console-grey;
+        color: $console-category;
       }
     }
     &__link {
-      color: $console-blue;
+      color: $console-link;
       transition: color .3s linear, text-shadow .3s linear;
       &:hover {
-        color: $console-hover-blue;
+        color: $console-link-hover;
         text-shadow: 0 0 3px white;
       }
     }
