@@ -2,6 +2,25 @@ import '../scss/main.scss';
 
 console.log("Hi, I'm Dora - nice to meet you! 🚀")
 
+const card = document.querySelectorAll(".card");
+
+let observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.intersectionRatio > 0) {
+        entry.target.style.opacity = 1;
+        entry.target.style.transform = "translateY(0px)";
+    } else {
+        entry.target.style.opacity = 0;
+        entry.target.style.transform = "translateY(30px)";
+    }
+  });
+},
+{rootMargin: "0px 0px -50px 0px"});
+
+card.forEach((section) => {
+  observer.observe(section);
+});
+/*
 //green-squares
 const box = document.getElementById("box");
 function getRandom(min, max) {
@@ -30,7 +49,7 @@ const interval = setInterval(() => {
 }, 2000);
 
 
-
+/*
 const repositoryList = document.querySelector('.repository-list--js');
 
 fetch('https://api.github.com/users/dorotapindur/repos?sort=created&direction=asc')
@@ -61,4 +80,4 @@ fetch('https://api.github.com/users/dorotapindur/repos?sort=created&direction=as
     console.log(error);
     console.log('api connection failed');    
 })
-
+*/

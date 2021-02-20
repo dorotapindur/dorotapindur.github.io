@@ -1,5 +1,5 @@
 .contact {
-    margin: 0;
+    margin: 30px 0;
     background: $main-background;
     width: 100%;
     max-width: 1440px;
@@ -12,10 +12,9 @@
       font-size: 40px;
       text-align: center;
       color: $header;
-      margin: 0;
+      margin: 0 0 10px;
       @media screen and (max-width: 670px) {
         font-size: 32px;
-        margin: 0;
       }
     }
     &__text {
@@ -35,16 +34,15 @@
     &__low-bar {
       width: 580px;
       max-width: 100%;
-      margin: 0;
+      margin: 15px 0;
       padding: 0;
       display: flex;
       justify-content: space-between;
       @media screen and (max-width: 670px) {
         width: 278px;
-        height: 160px;
+        height: 120px;
         flex-flow: column;
         align-items: center;
-        margin: 0;
       }
     }
     &__icon-container {

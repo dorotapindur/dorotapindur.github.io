@@ -1,11 +1,11 @@
 .skills {
-    background: #0033004d;
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     text-align: center;
+    margin: 30px 0;
     &__header {
       margin: 0;
       height: 56px;
@@ -50,7 +50,7 @@
       list-style-type: none;    
     }
     &__item {
-      color: $light-blue;
+      color: $text;
       font-weight: 600;
       font-size: 16px;
       line-height: 36px;
@@ -64,14 +64,14 @@
       &--something {
         &::before {
           content: '✓';
-          color: $light-blue;
+          color: $text;
           margin-right: 12px;
         }
       }
       &--want {
         &::before {
           content: '·';
-          color: $light-blue;
+          color: $text;
           margin-right: 12px;
         }
       }
