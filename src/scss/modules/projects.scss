@@ -2,9 +2,12 @@
     display: flex;
     flex-flow: column;
     align-items: center;  
-    padding: 0;
-    margin: 40px 0 40px;
+    padding: 40px 0 80px;
+    margin: 0;
     width: 100%;
+    background-color: black;
+    background-image: url("/img/numbers-background.jpg");
+    background-repeat: repeat;
     &__header {
       font-weight: bold;
       font-size: 40px;
