@@ -2,6 +2,7 @@ import '../scss/main.scss';
 
 console.log("Hi, I'm Dora - nice to meet you! 🚀")
 
+//intersection observer
 const card = document.querySelectorAll(".card");
 
 let observer = new IntersectionObserver((entries) => {
@@ -15,7 +16,7 @@ let observer = new IntersectionObserver((entries) => {
     }
   });
 },
-{rootMargin: "0px 0px -50px 0px"});
+{rootMargin: "0px 0px -20px 0px"});
 
 card.forEach((section) => {
   observer.observe(section);
