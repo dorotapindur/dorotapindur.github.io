@@ -5,7 +5,8 @@
     padding: 40px 0 80px;
     margin: 0;
     width: 100%;
-    background-color: black;
+    background: rgb(0,0,0);
+    background: linear-gradient(315deg, #000000 0%, #0a2005 50%, #000000 100%);
     background-image: url("/img/numbers-background.jpg");
     background-repeat: repeat;
     &__header {
